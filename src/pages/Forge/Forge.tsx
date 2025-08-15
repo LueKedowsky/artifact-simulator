@@ -11,8 +11,10 @@ export const Forge = () => {
 
       return (
         <div key={i}>
+          {i === 0 && <p>Main stat:</p>}
           <span>{field}: </span>
           <span>{num}</span>
+          {i === 0 && <p>Sub stats:</p>}
         </div>
       );
     });
@@ -21,7 +23,9 @@ export const Forge = () => {
   return (
     <div className={styles.container}>
       {arts.map((art, i) => (
-        <div key={i}>{drawArt(art)}</div>
+        <div key={i} className={styles.art}>
+          {drawArt(art)}
+        </div>
       ))}
     </div>
   );
