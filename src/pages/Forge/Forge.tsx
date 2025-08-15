@@ -1,29 +1,17 @@
-import { generateMainStat, generateSubStat } from 'shared/utils/artifacts';
+import { generateArt } from 'shared/utils/artifacts';
 
 export const Forge = () => {
-  const arts = [
-    {
-      main: generateMainStat(),
-      sub: generateSubStat(),
-    },
-    {
-      main: generateMainStat(),
-      sub: generateSubStat(),
-    },
-    {
-      main: generateMainStat(),
-      sub: generateSubStat(),
-    },
-  ];
+  const arts = Array.from({ length: 15 }, generateArt);
+  console.log('🚀 ~ Forge ~ arts:', arts);
 
   return (
     <div>
-      {arts.map((art, i) => (
+      {/* {arts.map((art, i) => (
         <div key={i}>
-          <span>{Object.entries(art.main)}</span>
-          <span>{Object.entries(art.sub)}</span>
+          <span>{Object.entries(art)}</span>
+          <span>{Object.entries(art)}</span>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };

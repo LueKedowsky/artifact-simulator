@@ -9,4 +9,7 @@ export const enum ART_STATS {
 export const enum ART_NUMBERS {
   MAIN = 'main',
   SUB = 'sub',
+  MAX_SUBS = 'max_subs',
 }
+
+export type StatsType = ART_NUMBERS.MAIN | ART_NUMBERS.SUB;

@@ -11,4 +11,5 @@ export const stats = {
 export const numbers = {
   [ART_NUMBERS.MAIN]: 10,
   [ART_NUMBERS.SUB]: 1,
+  [ART_NUMBERS.MAX_SUBS]: 4,
 };
