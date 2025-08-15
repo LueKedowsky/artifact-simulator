@@ -11,8 +11,7 @@ export const generateStat = (
   [stat]: numbers[type],
 });
 
-export const generateSubsCount = () =>
-  Math.max(2, getRandom(numbers.max_subs) + 1);
+export const generateSubsCount = () => Math.max(2, getRandom(numbers.max_subs));
 
 export const generateArt = () => {
   const statsSet = shuffle(Object.values(stats));

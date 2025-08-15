@@ -12,4 +12,6 @@ export const enum ART_NUMBERS {
   MAX_SUBS = 'max_subs',
 }
 
+export type Artifact = Record<ART_STATS[number], number>;
+
 export type StatsType = ART_NUMBERS.MAIN | ART_NUMBERS.SUB;
